@@ -1,0 +1,16 @@
+FROM openjdk:22-jdk
+
+# Set the working directory
+WORKDIR /app
+
+# Copy the application files to the container
+COPY demo /app/demo
+
+# Set working directory to the copied folder
+WORKDIR /app/demo
+
+# Run the Maven build
+RUN ./mvnw clean package
+
+# Run the JAR file
+CMD ["java", "-jar", "target/demo-0.0.1-SNAPSHOT.jar"]
