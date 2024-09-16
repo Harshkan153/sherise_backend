@@ -4,6 +4,9 @@ node_modules/
 # Angular build output
 dist/
 
+#ignoring idea
+.idea/
+
 # Angular CLI cache
 .angular/
 
