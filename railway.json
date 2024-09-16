@@ -1,12 +1,7 @@
 {
   "build": {
-    "builder": "Nixpacks",
-    "nixpacks": {
-      "phases": {
-        "install": "cd Sherise_backend && ./mvnw clean install",
-        "build": "cd Sherise_backend && ./mvnw package"
-      }
-    }
+    "builder": "java",
+    "path": "Sherise_backend"
   },
-  "start": "cd Sherise_backend && java -jar target/demo-0.0.1-SNAPSHOT.jar"
+  "start": "java -jar Sherise_backend/target/demo-0.0.1-SNAPSHOT.jar"
 }
