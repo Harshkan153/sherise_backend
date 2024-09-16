@@ -1,0 +1,12 @@
+{
+  "build": {
+    "command": "cd demo && ./mvnw clean package",
+    "output": "demo/target/demo-0.0.1-SNAPSHOT.jar"
+  },
+  "start": {
+    "command": "java -jar demo/target/demo-0.0.1-SNAPSHOT.jar"
+  },
+  "env": {
+    "JAVA_VERSION": "22"
+  }
+}
