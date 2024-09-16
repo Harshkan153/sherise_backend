@@ -1,9 +1,0 @@
-
-
-{
-  "build": {
-    "builder": "maven",
-    "path": "Sherise_backend"
-  },
-  "start": "java -jar Sherise_backend/target/demo-0.0.1-SNAPSHOT.jar"
-}
